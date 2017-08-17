@@ -59,7 +59,7 @@ def magicBall():
 def listToString(tab):
     for i in tab:
         print(i, end=', ')
-        # linter marks this as error, but it works perfectly
+        # linter marks this as error, but it works perfectly fine
 
 
 def printGrid(tab):
@@ -68,6 +68,17 @@ def printGrid(tab):
         for y in range(len(tab)):
             print(tab[y][x], end="")
     print()
+
+
+def customGrid():
+    print('pass X and Y')
+    x = input()
+    y = input()
+    print('map size is: ' + str(x) + ':' + str(y))
+    for i in range(int(x)):
+        print()
+        for j in range(int(y)):
+            print('_|', end="")
 
 
 grid = [['X ', 'X ', '0 ', '0 ', '0 ', 'X '],
@@ -84,4 +95,5 @@ iSpam = ['apples', 'bananas', 'tofu', 'cats']
 # isMyPet()
 # magicBall()
 # listToString(iSpam)
-printGrid(grid)
+# printGrid(grid)
+customGrid()
