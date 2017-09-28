@@ -95,5 +95,5 @@ iSpam = ['apples', 'bananas', 'tofu', 'cats']
 # isMyPet()
 # magicBall()
 # listToString(iSpam)
-# printGrid(grid)
-customGrid()
+printGrid(grid)
+# customGrid()
