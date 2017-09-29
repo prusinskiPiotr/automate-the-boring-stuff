@@ -26,6 +26,22 @@ def picnicList(itemsDict, leftWidth, rightWidth):
     for k, v in itemsDict.items():
         print(k.ljust(leftWidth, '.') + str(v).rjust(rightWidth))
 
+tableData = [['John', 'Paul', 'George', 'Ringo'],
+             ['Rhythm', 'Bass', 'Lead', 'Drums'],
+             ["Don't", 'let', 'me', 'down']]
+
+
+def printTable(tab):
+    colWidths = [0] * len(tab)
+    for i in colWidths:
+        colWidths = max(tab[i], key=len)
+
+    y = len(colWidths) + 3
+
+    for x in range(len(tab[0])):
+        print(str(tab[0][x]).ljust(y) + str(tab[1][x]).center(y) + str(tab[2][x]).rjust(y))
+
+printTable(tableData)
 
 # validateInput()
 # joinnsplit()
