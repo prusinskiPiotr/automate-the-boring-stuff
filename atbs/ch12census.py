@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!./env/bin/python
 # Tabulates population and number of census tracts for each county
 
 import openpyxl
